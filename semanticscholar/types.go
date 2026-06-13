@@ -31,16 +31,16 @@ type Author struct {
 // ─── wire types from the Semantic Scholar Graph API ──────────────────────────
 
 type apiPaper struct {
-	PaperID                  string            `json:"paperId"`
-	Title                    string            `json:"title"`
-	Abstract                 string            `json:"abstract"`
-	Year                     *int              `json:"year"`
-	Authors                  []apiAuthorShort  `json:"authors"`
-	ExternalIDs              map[string]string `json:"externalIds"`
-	CitationCount            int               `json:"citationCount"`
-	ReferenceCount           int               `json:"referenceCount"`
-	InfluentialCitationCount int               `json:"influentialCitationCount"`
-	IsOpenAccess             bool              `json:"isOpenAccess"`
+	PaperID                  string           `json:"paperId"`
+	Title                    string           `json:"title"`
+	Abstract                 string           `json:"abstract"`
+	Year                     *int             `json:"year"`
+	Authors                  []apiAuthorShort `json:"authors"`
+	ExternalIDs              map[string]any   `json:"externalIds"`
+	CitationCount            int              `json:"citationCount"`
+	ReferenceCount           int              `json:"referenceCount"`
+	InfluentialCitationCount int              `json:"influentialCitationCount"`
+	IsOpenAccess             bool             `json:"isOpenAccess"`
 	OpenAccessPdf            *struct {
 		URL string `json:"url"`
 	} `json:"openAccessPdf"`
