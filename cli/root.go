@@ -128,7 +128,7 @@ func (a *App) setup() error {
 		Retries:   a.retries,
 		Timeout:   a.timeout,
 	}
-	a.client = semanticscholar.NewClientConfig(cfg)
+	a.client = semanticscholar.NewClient(cfg)
 	return nil
 }
 
