@@ -1,0 +1,10 @@
+title       = "s2"
+baseURL     = "https://semanticscholar-cli.tamnd.com/"
+description = "Search Semantic Scholar academic papers and authors"
+contentDir  = "content"
+outputDir   = "public"
+theme       = "tago-doks"
+syntaxHighlight = "true"
+
+[params]
+github = "https://github.com/tamnd/semanticscholar-cli"
