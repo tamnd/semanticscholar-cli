@@ -168,7 +168,7 @@ func TestSearchAuthorsReturnsResults(t *testing.T) {
 				HIndex:        160,
 				CitationCount: 450000,
 				PaperCount:    620,
-				Affiliations:  []string{"Universite de Montreal"},
+				Affiliations:  []string{"University of Montreal"},
 			},
 		},
 	}
